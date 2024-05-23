@@ -6,12 +6,11 @@ describe("The landing page", () => {
 
 describe("The Login Page", () => {
   it("It should login", function () {
-    const email = "candidate_user@cymulate1.com";
-    const password = ""; // enter password 
+   
 
-    cy.get("input[id=email]", { timeout: 10000 }).type(email);
+    cy.get("input[id=email]", { timeout: 10000 }).type(Cypress.env('email'));
 
-    cy.get("input[name=password]").type(`${password}{enter}`);
+    cy.get("input[name=password]").type(`${Cypress.env('password')}{enter}`);
 
     cy.url().should("include", "/cym");
   });
