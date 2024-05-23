@@ -5,4 +5,5 @@ Execution steps to run cypress test script
 3.	Run npm install 
 4.	Run npx cypress open 
 5.	Select e2e testing
-6.	Check if all tests are running and passed step by step
+6.	click on the spec file 
+7.	Check if all tests are running and passed step by step
