@@ -7,7 +7,7 @@ describe("The landing page", () => {
 describe("The Login Page", () => {
   it("It should login", function () {
     const email = "candidate_user@cymulate1.com";
-    const password = "ZzAa!@#$4321";
+    const password = ""; // enter password 
 
     cy.get("input[id=email]", { timeout: 10000 }).type(email);
 
